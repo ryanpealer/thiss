@@ -1,0 +1,170 @@
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?m2j12f');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?m2j12f#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?m2j12f') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?m2j12f') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?m2j12f##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="socicon-"], [class*=" socicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.socicon-github {
+  &:before {
+    content: $socicon-github;
+  }
+}
+.socicon-squarespace {
+  &:before {
+    content: $socicon-squarespace; 
+  }
+}
+.socicon-tiktok {
+  &:before {
+    content: $socicon-tiktok; 
+  }
+}
+.socicon-flickr {
+  &:before {
+    content: $socicon-flickr; 
+  }
+}
+.socicon-soundcloud {
+  &:before {
+    content: $socicon-soundcloud; 
+  }
+}
+.socicon-reddit {
+  &:before {
+    content: $socicon-reddit; 
+  }
+}
+.socicon-linkedin {
+  &:before {
+    content: $socicon-linkedin; 
+  }
+}
+.socicon-viber {
+  &:before {
+    content: $socicon-viber; 
+  }
+}
+.socicon-twitter {
+  &:before {
+    content: $socicon-twitter; 
+  }
+}
+.socicon-instagram {
+  &:before {
+    content: $socicon-instagram; 
+  }
+}
+.socicon-tumblr {
+  &:before {
+    content: $socicon-tumblr; 
+  }
+}
+.socicon-wechat {
+  &:before {
+    content: $socicon-wechat; 
+  }
+}
+
+
+.socicon-facebook {
+  &:before {
+    content: $socicon-facebook ; 
+  }
+}
+.socicon-telegram {
+  &:before {
+    content: $socicon-telegram; 
+  }
+}
+.socicon-vimeo {
+  &:before {
+    content: $socicon-vimeo; 
+  }
+}
+.socicon-whatsapp {
+  &:before {
+    content: $socicon-whatsapp; 
+  }
+}
+.socicon-snapchat {
+  &:before {
+    content: $socicon-snapchat; 
+  }
+}
+.socicon-yelp {
+  &:before {
+    content: $socicon-yelp; 
+  }
+}
+.socicon-tinder {
+  &:before {
+    content: $socicon-tinder; 
+  }
+}
+.socicon-youtubemusic {
+  &:before {
+    content: $socicon-youtubemusic; 
+  }
+}
+.socicon-youtube {
+  &:before {
+    content: $socicon-youtube; 
+  }
+}
+.socicon-airbnb {
+  &:before {
+    content: $socicon-airbnb; 
+  }
+}
+.socicon-pinterest {
+  &:before {
+    content: $socicon-pinterest; 
+  }
+}
+.socicon-foursquare {
+  &:before {
+    content: $socicon-foursquare; 
+  }
+}
+.socicon-dribbble {
+  &:before {
+    content: $socicon-dribbble; 
+  }
+}
+.socicon-slack {
+  &:before {
+    content: $socicon-slack; 
+  }
+}
+
+.socicon-envelope {
+  &:before {
+    content: $socicon-envelope;
+  }
+}
+.socicon-link {
+  &:before {
+    content: $socicon-share;
+  }
+}

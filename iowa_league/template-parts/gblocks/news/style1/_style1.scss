@@ -1,0 +1,16 @@
+.blck-news-wrapper {
+  @include section-bg-styles();
+  // @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    > .container {
+      background: $white;
+    }
+  // }
+  &:not(.alignfull) {
+    .container {
+      padding: 20px;
+      @media (min-width: 768px) {
+        padding: 48px 52px;
+      }
+    }
+  }
+}

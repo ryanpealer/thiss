@@ -1,0 +1,22 @@
+.blck-select-service-category {
+}
+.services-list {
+  @media (min-width: 768px) {
+    column-fill: balance-all;
+    column-gap: 0;
+    column-count: 3;
+  }
+  &__item {
+    padding: 14px;
+    display: inline-block;
+    width: 100%;
+    color: $text_black;
+    text-decoration: none;
+    &:hover {
+      color: $primary1;
+    }
+    &:nth-child(odd) {
+      background-color: #fdfdfd;
+    }
+  }
+}

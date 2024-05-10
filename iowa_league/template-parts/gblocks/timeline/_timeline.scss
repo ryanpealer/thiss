@@ -1,0 +1,214 @@
+.blck-story {
+  width: 100%;
+  padding: 80px 20px;
+  background: #000;
+
+  &.alignfull {
+    width: 100vw;
+  }
+  @media(min-width: 768px) and (max-width: 991px) {
+    padding: 20px;
+  }
+  @media(max-width: 767px) {
+    padding: 20px;
+  }
+
+  &-content {
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    max-width: 720px;
+    margin: 0 0 60px;
+
+    @media(min-width: 320px) and (max-width: 1199px) {
+       max-width: 100%;
+       margin: 0 0 40px;
+    }
+  }
+
+  h2 {
+    font-weight: 600;
+    color: #fff;
+    @include rem(font-size, 48.8px);
+    @media(max-width: 767px) {
+       @include rem(font-size, 32px);
+    }    
+  }
+
+  p {
+    font-size: 21px;
+    line-height: 28px;
+    margin: 0 0 24px;
+    color: #fff;
+
+    @media(max-width: 767px) {
+       @include rem(font-size, 18px);
+       line-height: 1.4;
+    }      
+  }
+
+  .timeline {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    min-height: 300px;
+    margin: 0 15px;
+
+    @media (min-width: 320px) and (max-width: 1199px) {
+      min-height: inherit;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      height: 2px;
+      background: #fff;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      @media(max-width: 1199px) {
+        display: none;
+      }
+    }
+
+    .item {
+      position: absolute;
+      min-width: 240px;
+      width: 240px;
+      min-height: 120px;
+      height: 120px;
+      top: 0;
+
+      @media(min-width: 320px) and (max-width: 1199px) {
+        position: relative;
+        width: 100%;
+        height: auto;
+        width: 100%;
+        left: 0!important;
+        top: 0;
+        padding: 0 0 0 40px;
+      }
+
+
+      &:nth-child(1) {
+        left: 0;
+      }
+      &:nth-child(2) {
+        left: 160px;
+
+      }
+      &:nth-child(3) {
+        left: 320px;
+       
+      } 
+      &:nth-child(4) {
+        left: 480px;
+        
+      }  
+      &:nth-child(5) {
+        left: 640px;
+       
+      } 
+      &:nth-child(6) {
+        left: 800px;
+      
+      }       
+      &:nth-child(7) {
+        left: 960px;
+           
+      }
+                                 
+      &:nth-child(even) {
+        bottom: 0;
+        top: auto;
+
+        .date {
+          top: auto;
+          bottom: 0;
+        }
+        .item-holder {
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: auto;
+            top: -30px;
+            height: 20px;
+            width: 2px;
+            background: #fff;
+            display: block;
+
+            @media(min-width: 320px) and (max-width: 1199px) {
+              top: 10px;
+              left: -55px;
+              width: 40px;
+              height: 2px;              
+            }
+          }           
+        }
+      }
+      &-holder {
+        position: relative;
+        max-width: 320px;
+        padding: 0 0 0 40px;  
+        min-height: 120px;   
+        height: 120px; 
+
+        @media(min-width: 320px) and (max-width: 1199px) {
+          width: 100%;
+          height: auto;
+          padding: 0;
+          max-width: 100%;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -30px;
+          height: 20px;
+          width: 2px;
+          background: #fff;
+          display: block;
+
+          @media(min-width: 320px) and (max-width: 1199px) {
+           top: 10px;
+            left: -55px;
+            width: 40px;
+            height: 2px;
+          }          
+        }  
+      }
+      .date {
+        position: absolute;
+        letter-spacing: -1.34px;
+        line-height: 1;
+        top: 0;
+        left: -40px;
+        color: #fff;
+        font-weight: 600;
+        @include rem(font-size, 48.83px);  
+        transform: rotate(-90deg);
+
+        @media(min-width: 320px) and (max-width: 1199px) {
+          transform: none;
+          position: relative;
+          left: 0;
+        }
+      }
+
+      .description {
+        p {
+          margin: 0;
+          @include rem(font-size, 16px);  
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,233 @@
+// iowa_league colors:
+
+$primary1: #005395;
+$primary2: #003561;
+
+
+$secondary1: #003561;
+$secondary2: #005395;
+
+$tertiary1: #93A445;
+$tertiary2: #65751f;
+
+$dark-green: #647119;
+
+$gray: #eee;
+$gray1: #FAFAFA;
+$gray2: #E0E0E0;
+$gray5: #757575;
+
+$white: #FFFFFF;
+$snow_white: #FAFCFF;
+$snow_blue: #EEF4F9;
+
+$black: #212121;
+$pitch_black: #000;
+$text_black: #333;
+
+$copy: #424242;
+
+$placeholder: #9E9E9E;
+
+//alert color:
+
+$alert: #EB5757;
+$highlight: #F2C94C;
+
+
+$mainFont: 'Roboto', sans-serif;
+$font-weight-bold: 900;
+$font-weight-medium: 700;
+$font-weight-normal: 400;
+
+/* Font sizes */
+$mainFontSize: 16px;
+$mainFontSizeMobile: 11.11px;
+$smallFontSize: 12.8px;
+$smallFontSizeMobile: 11.11px;
+$largeFontSize: 18px;
+$largeFontSizeMobile: 13.33px;
+$xlargeFontSize: 20px;
+$xlargeFontSizeMobile: 13.33px;
+$hlargeFontSize: 25px;
+$hlargeFontSizeMobile: 13.33px;
+$bodyRegular: 21px;
+
+$mainTextColor: $copy;
+$lineHeight: 1.4375;
+$lineHeightMobile: 1.4375;
+$smallLineHeight: 1.4;
+
+$mainMargin: 0 0 24px; // initial margin between paragraphs, lists, figure etc
+
+$containerWidth: 1224px;
+$containerWidthMiddle : 990px;
+$containerWidthSmall: 808px;
+$containerHorPadding: 20px;
+
+$sectionTBPadding: 64px;
+
+$btnPrimaryFont: $mainFont;
+$btnPrimaryWeight: 700;
+$btnPrimaryFontSize: 16px;
+$btnPrimaryFontSizeMobile: 12.8px;
+$btnPrimaryLineHeight: 1.6;
+$btnPrimaryPadding: 19px 40px;
+$btnPrimaryPaddingMobile: 12.5px 40px;
+$btnPrimaryBg: $primary1;
+$btnPrimaryBgHover: $primary2;
+$btnPrimaryBgActive: $primary2;
+$btnPrimaryBorder: 1.5px solid $primary1;
+$btnPrimaryBorderHover: 1.5px solid $primary2;
+$btnPrimaryBorderActive: 1.5px solid $primary2;
+$btnPrimaryBorderRadius: 0;
+$btnPrimaryColor: $white;
+$btnPrimaryColorHover: $white;
+$btnPrimaryColorActive: $white;
+$btnPrimaryShadow : 0px 2px 30px -4px rgba(33, 33, 33, 0.08), 0px 0px 20px -4px rgba(33, 33, 33, 0.08);
+$btnPrimaryShadowHover : 0px 2px 30px -4px rgba(33, 33, 33, 0.08), 0px 0px 20px -4px rgba(33, 33, 33, 0.08);
+$btnPrimaryShadowActive : 0px 2px 30px -4px rgba(33, 33, 33, 0.08), 0px 0px 20px -4px rgba(33, 33, 33, 0.08);
+
+$btnSecondaryFont: $mainFont;
+$btnSecondaryWeight: 700;
+$btnSecondaryFontSize: 16px;
+$btnSecondaryFontSizeMobile: 12.8px;
+$btnSecondaryLineHeight: 1.6;
+$btnSecondaryPadding: 19px 40px;
+$btnSecondaryPaddingMobile: 12.5px 40px;
+$btnSecondaryBg: $secondary1;
+$btnSecondaryBgHover: $secondary2;
+$btnSecondaryBgActive: $secondary1;
+$btnSecondaryBorder: 1.5px solid $secondary1;
+$btnSecondaryBorderHover: 1.5px solid $secondary1;
+$btnSecondaryBorderActive: 1.5px solid $secondary1;
+$btnSecondaryBorderRadius: 0;
+$btnSecondaryColor: $white;
+$btnSecondaryColorHover: $white;
+$btnSecondaryColorActive: $white;
+$btnSecondaryShadow : 0px 2px 30px -4px rgba(33, 33, 33, 0.08), 0px 0px 20px -4px rgba(33, 33, 33, 0.08);
+$btnSecondaryShadowHover : 0px 2px 30px -4px rgba(33, 33, 33, 0.08), 0px 0px 20px -4px rgba(33, 33, 33, 0.08);
+$btnSecondaryShadowActive : 0px 2px 30px -4px rgba(33, 33, 33, 0.08), 0px 0px 20px -4px rgba(33, 33, 33, 0.08);
+
+$btnTertiaryFont: $mainFont;
+$btnTertiaryWeight: 700;
+$btnTertiaryFontSize: 16px;
+$btnTertiaryFontSizeMobile: 12.8px;
+$btnTertiaryLineHeight: 1.6;
+$btnTertiaryPadding: 14px 40px;
+$btnTertiaryPaddingMobile: 16px 40px;
+$btnTertiaryBg: $white;
+$btnTertiaryBgHover: $tertiary1;
+$btnTertiaryBgActive: $tertiary2;
+$btnTertiaryBorder: 1.5px solid $tertiary1;
+$btnTertiaryBorderHover: 1.5px solid $tertiary1;
+$btnTertiaryBorderActive: 1.5px solid $tertiary2;
+$btnTertiaryBorderRadius: null;
+$btnTertiaryColor: $copy;
+$btnTertiaryColorHover: $white;
+$btnTertiaryColorActive: $white;
+$btnTertiaryShadow : null;
+$btnTertiaryShadowHover : null;
+$btnTertiaryShadowActive : null;
+
+$headingFont: $mainFont; // general font for all headings; If for some of them should be another - setup it below
+$headingLineHeight: 1.4; // general line height for all headings; If for some of them should be another - setup it below
+
+$headingH1Font: null;
+$headingH1LineHeight: 1.2;
+$headingH1LineHeightM: 1.32;
+$headingH1FontSize: 61px;
+$headingH1FontSizeM: 33.18px;
+
+$headingH2Font: null;
+$headingH2LineHeight: 1.2;
+$headingH2LineHeightM: 1.27;
+$headingH2FontSize: 48.83px;
+$headingH2FontSizeM: 27.65px;
+
+$headingH3Font: null;
+$headingH3LineHeight: null;
+$headingH3LineHeightM: 1.22;
+$headingH3FontSize: 39.06px;
+$headingH3FontSizeM: 23.04px;
+
+$headingH4Font: null;
+$headingH4LineHeight: null;
+$headingH4LineHeightM: 1.17;
+$headingH4FontSize: 31.25px;
+$headingH4FontSizeM: 20px;
+
+$headingH5Font: null;
+$headingH5LineHeight: null;
+$headingH5LineHeightM: null;
+$headingH5FontSize: 25px;
+$headingH5FontSizeM: 16px;
+
+$headingH6Font: null;
+$headingH6LineHeight: null;
+$headingH6LineHeightM: null;
+$headingH6FontSize: 20px;
+$headingH6FontSizeM: 16px;
+
+$linkColor: $primary1;
+$linkColorHover: $black;
+
+$defaultSeparatorColor: $primary1;
+
+$figureMargin: $mainMargin;
+$figureFontSize: $smallFontSize;
+$figureLineHeight: $smallLineHeight;
+
+$listItemMargin: 0 0 21px 20px;
+
+
+$wpAdminLeftSide : 160px;
+$wpAdminRightSide : 280px;
+
+$gapBetweenColumns : 16px;
+
+$bodyBg : #FAFAFA;
+
+$headerBg : #fff;
+$headerColor : $black;
+$headerPadding : 0;
+
+$footerBg : $primary1;
+$footerColor : #fff;
+$footerPadding : 58px 0;
+
+$icomoon-font-family: "socialicons" !default;
+$icomoon-font-path: "../fonts" !default;
+
+$socicon-facebook: "\e91c";
+$socicon-linkedin: "\e91d";
+$socicon-share: "\e91e";
+$socicon-github: "\e919";
+$socicon-squarespace: "\e900";
+$socicon-tiktok: "\e901";
+$socicon-flickr: "\e902";
+$socicon-soundcloud: "\e903";
+$socicon-reddit: "\e904";
+$socicon-linkedin1: "\e905";
+$socicon-viber: "\e906";
+$socicon-twitter: "\e907";
+$socicon-instagram: "\e908";
+$socicon-tumblr: "\e909";
+$socicon-wechat: "\e90a";
+$socicon-facebook1: "\e90b";
+$socicon-telegram: "\e90c";
+$socicon-vimeo: "\e90d";
+$socicon-whatsapp: "\e90e";
+$socicon-snapchat: "\e90f";
+$socicon-yelp: "\e910";
+$socicon-tinder: "\e911";
+$socicon-youtubemusic: "\e912";
+$socicon-youtube: "\e913";
+$socicon-airbnb: "\e914";
+$socicon-pinterest: "\e915";
+$socicon-foursquare: "\e916";
+$socicon-dribbble: "\e917";
+$socicon-slack: "\e918";
+$socicon-envelope: "\e91a";
+$socicon-link: "\e91b";
+

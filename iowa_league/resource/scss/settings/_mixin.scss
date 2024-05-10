@@ -1,0 +1,306 @@
+@mixin container() {
+  width: 100%;
+  max-width: calc(#{$containerWidth} + (#{$containerHorPadding} * 2));
+  padding: 0 $containerHorPadding;
+  margin: 0 auto;
+  &.middle {
+    max-width: calc(#{$containerWidthMiddle} + (#{$containerHorPadding} * 2));
+  }
+  &.small {
+    max-width: calc(#{$containerWidthSmall} + (#{$containerHorPadding} * 2));
+  }
+}
+
+@mixin primary-btn() {
+  font: {
+    family: $btnPrimaryFont;
+    weight: $btnPrimaryWeight;
+  }
+  @include rem(font-size, $btnPrimaryFontSizeMobile);
+  line-height: $btnPrimaryLineHeight;
+  display: inline-block;
+  padding: $btnPrimaryPaddingMobile;
+  border: $btnPrimaryBorder;
+  background: $btnPrimaryBg;
+  color: $btnPrimaryColor;
+  transition: all 0.3s;
+  text-decoration: none;
+  @if $btnPrimaryBorderRadius != "null" {
+    border-radius: $btnPrimaryBorderRadius;
+  }
+  @if $btnPrimaryShadow != "null" {
+    box-shadow: $btnPrimaryShadow;
+  }
+
+  @media (min-width: 768px) {
+    padding: $btnPrimaryPadding;
+    @include rem(font-size, $btnPrimaryFontSize);
+  }
+
+  &:hover {
+    background: $btnPrimaryBgHover;
+    color: $btnPrimaryColorHover;
+    border: $btnPrimaryBorderHover;
+    @if $btnPrimaryShadowHover != "null" {
+      box-shadow: $btnPrimaryShadowHover;
+    }
+  }
+
+  &:active {
+    background: $btnPrimaryBgActive;
+    color: $btnPrimaryColorActive;
+    border: $btnPrimaryBorderActive;
+    @if $btnPrimaryShadowActive != "null" {
+      box-shadow: $btnPrimaryShadowActive;
+    }
+  }
+
+
+}
+
+@mixin secondary-btn() {
+  font: {
+    family: $btnSecondaryFont;
+    weight: $btnSecondaryWeight;
+  }
+  @include rem(font-size, $btnSecondaryFontSizeMobile);
+  line-height: $btnSecondaryLineHeight;
+  display: inline-flex;
+  padding: $btnSecondaryPaddingMobile;
+  border: $btnSecondaryBorder;
+  background: $btnSecondaryBg;
+  color: $btnSecondaryColor;
+  transition: all 0.3s;
+  text-decoration: none;
+  @if $btnSecondaryBorderRadius != "null" {
+    border-radius: $btnSecondaryBorderRadius;
+  }
+  @if $btnSecondaryShadow != "null" {
+    box-shadow: $btnSecondaryShadow;
+  }
+
+  &:hover {
+    background: $btnSecondaryBgHover;
+    color: $btnSecondaryColorHover;
+    border: $btnSecondaryBorderHover;
+    @if $btnSecondaryShadowHover != "null" {
+      box-shadow: $btnSecondaryShadowHover;
+    }
+  }
+
+  &:active {
+    background: $btnSecondaryBgActive;
+    color: $btnSecondaryColorActive;
+    border: $btnSecondaryBorderActive;
+    @if $btnSecondaryShadowActive != "null" {
+      box-shadow: $btnSecondaryShadowActive;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: $btnSecondaryPadding;
+    @include rem(font-size, $btnSecondaryFontSize);
+  }
+}
+
+@mixin tertiary-btn() {
+  font: {
+    family: $btnTertiaryFont;
+    weight: $btnTertiaryWeight;
+  }
+  @include rem(font-size, $btnTertiaryFontSizeMobile);
+  line-height: $btnTertiaryLineHeight;
+  display: inline-block;
+  align-items: center;
+  padding: $btnTertiaryPaddingMobile;
+  border: $btnTertiaryBorder!important;
+  background: $btnTertiaryBg;
+  color: $btnTertiaryColor!important;
+  transition: all 0.3s;
+  text-decoration: none;
+  @if $btnTertiaryBorderRadius != "null" {
+    border-radius: $btnTertiaryBorderRadius;
+  }
+  @if $btnTertiaryShadow != "null" {
+    box-shadow: $btnTertiaryShadow;
+  }
+
+
+  &:hover {
+    background: $btnTertiaryBgHover;
+    color: $btnTertiaryColorHover!important;
+    border: $btnTertiaryBorderHover;
+    @if $btnTertiaryShadowHover != "null" {
+      box-shadow: $btnTertiaryShadowHover;
+    }
+  }
+
+  &:active {
+    background: $btnTertiaryBgActive;
+    color: $btnTertiaryColorActive;
+    border: $btnTertiaryBorderActive;
+    @if $btnTertiaryShadowActive != "null" {
+      box-shadow: $btnTertiaryShadowActive;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: $btnTertiaryPadding;
+    @include rem(font-size, $btnTertiaryFontSize);
+  }
+
+  &.disabled {
+    pointer-events: none;
+    color: $placeholder!important;
+    border-color: $placeholder!important;
+  }
+}
+
+@mixin link-btn() {
+  font-weight: $font-weight-normal!important;
+  background: none!important;
+  border: none!important;
+  color: $tertiary1!important;
+  box-shadow: none!important;
+  padding: 0 50px 0 0 !important;
+  line-height: 1.5!important;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+
+  &.has-darker-green-color {
+    color: $dark-green!important;
+
+    &:after {
+      background-image: url("data:image/svg+xml,%3Csvg width='26' height='14' viewBox='0 0 28 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 8L25 8' stroke='%23647119' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M20 1L27 8L20 15' stroke='%2393A445' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    }
+  }
+  &:hover {
+    color: $tertiary2;
+  }
+  &:after {
+    position: absolute;
+    bottom: .4em;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='26' height='14' viewBox='0 0 28 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 8L25 8' stroke='%2393A445' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M20 1L27 8L20 15' stroke='%2393A445' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    width: 26px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: -2px;
+    margin-left: 8px;
+    transition: all 0.3s ease-in-out;
+    font-weight: normal;
+    line-height: normal;
+  }
+
+  &:hover {
+    &:after {
+      margin-left: 12px;
+    }
+  }
+}
+
+@mixin section-bg-styles() {
+  position: relative;
+  background: var(--section-bg);
+  color: var(--section-text-color);
+  .bg-image {
+    width: 100vw;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: var(--bg-img-size);
+    object-position: var(--bg-img-position);
+    position: absolute;
+    top: 0;
+    left: calc(50% - 50vw);
+    z-index: 0;
+    @media (min-width: 768px) {
+      &-high {
+        height: 864px!important;
+      }
+      &-medium {
+        height: 530px!important;
+      }
+      &-small {
+        height: 400px!important;
+      }
+    }
+  }
+  a:not(.btn-link) {
+    color: var(--section-text-color);
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@mixin search-group(){
+  display: flex;
+  align-items: stretch;
+  .search-field {
+    background: #fafafa;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 0;
+    padding: 10px 16px;
+    width: 100%;
+    @include rem(font-size, 11.11px);
+    line-height: 1.62;
+    @media (min-width: 768px){
+      @include rem(font-size, 16px);
+      line-height: 1.6;
+      letter-spacing: -0.0016em;
+    }
+    &::placeholder {
+      color: #BDBDBD;
+      opacity: 1;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 5px rgba(0,0,0,.2) inset;
+    }
+  }
+  .search-submit {
+    border: none;
+    background: {
+      color: $primary1;
+      image: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.5 19C15.9183 19 19.5 15.4183 19.5 11C19.5 6.58172 15.9183 3 11.5 3C7.08172 3 3.5 6.58172 3.5 11C3.5 15.4183 7.08172 19 11.5 19Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M21.5004 21L17.1504 16.65' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      repeat: no-repeat;
+      position: center right 16px;
+    }
+    font-weight: $font-weight-normal;
+    background-color: #005395;
+    border-radius: 0;
+    color: #fff;
+    padding: 11px 48px 11px 16px;
+    font-size: .694rem;
+    cursor: pointer;
+
+    @include rem(font-size, 11.11px);
+    line-height: 1.62;
+    @media (min-width: 768px){
+      @include rem(font-size, 12.8px);
+      line-height: 1.6;
+      letter-spacing: -.09px;
+    }
+    &:hover {
+      background-color: $secondary1;
+    }
+    &:active {
+      background-color: $primary2;
+      outline: none;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@mixin revert-link(){
+  a {
+    color: $black;
+    &:hover {
+      color: $primary1;
+    }
+  }
+}

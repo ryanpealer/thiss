@@ -1,0 +1,8 @@
+.gtool-spacer {
+  @media(max-width: 767px) {
+    height: auto!important;
+    span {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+    "key": "group_6183ceaee0ef4",
+    "title": "Resources Details Settings",
+    "fields": [
+        {
+            "key": "field_6183ceaee8326",
+            "label": "Scheduling Start Date",
+            "name": "scheduling_start_date",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "Y\/m\/d H:i:s",
+            "return_format": "Y\/m\/d H:i:s",
+            "first_day": 1
+        },
+        {
+            "key": "field_6183ceaee8369",
+            "label": "Scheduling End Date",
+            "name": "scheduling_end_date",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "Y\/m\/d H:i:s",
+            "return_format": "Y\/m\/d H:i:s",
+            "first_day": 1
+        },
+        {
+            "key": "field_6183ceaee83a7",
+            "label": "Enterprise Keywords",
+            "name": "enterprise_keywords",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "resource"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1636036403
+}

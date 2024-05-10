@@ -1,0 +1,208 @@
+.blck-report {
+  width: 100%;
+  padding: 80px 0;
+
+  @media(max-width: 767px) {
+    padding: 20px 0;
+  }
+
+  .report-head {
+    width: 100%;
+    display:flex;
+    align-item: center;
+    justify-content: space-between;
+    margin: 0 0 50px;
+    padding: 0;
+
+    @media(max-width: 767px) {
+      margin: 0 0 20px;
+      flex-direction: column;
+    }
+
+
+    h2 {
+      @include rem('font-size', 31.25px);
+      font-weight: normal;
+      margin: 0;
+
+      line-height: 44px;      
+
+      position: relative;
+
+      &.mod-highlight {
+          font-weight: 600;
+          padding: 44px 0 0;
+          @include rem('font-size', 48.83px);
+          &:before {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            min-width: 180px;
+            height: 5px;
+            width: 30%;
+            background: #000;
+          }
+      }
+
+      @media(max-width: 767px) {
+        @include rem('font-size', 28px);
+        line-height: 1.2; 
+        margin: 0 0 20px;
+      }
+    }
+
+    a {
+      @include rem('font-size', 25px);
+      line-height: 38px;    
+      text-decoration: none;
+      @media(max-width: 767px) {
+        float: right;
+        @include rem('font-size', 18px);
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .report-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &--item {
+      text-decoration: none;
+      background: #E6EEF4;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      padding: 33px 24px 32px 24px;
+      @include rem('font-size', 25px);
+
+
+      .col {
+        min-width: 20%;
+        @media(min-width: 767px) {  
+          text-align: center;
+        }
+
+        &:nth-child(2) {
+          @media(min-width: 767px) {  
+            text-align: left;
+          }          
+        }
+
+        &:first-child {
+          @media(min-width: 767px) {  
+            text-align: left;
+            min-width: 10%;
+          }
+        }
+      }
+
+      @media(min-width: 320px) and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: flex-start;
+        background: none;
+        justify-content: flex-start;
+
+        .col {
+          padding: 0 10px;
+          margin: 0 0 10px;
+          width: 100%;
+
+          ul {
+            li {
+
+              &:first-child {
+                a {
+                  &:before {
+                    display: inline-block;
+                  }
+                }
+              }
+              a {
+                &:before {
+                  display: none;
+                }
+              }
+            }
+          }
+          a {
+
+            &:before {
+              content: ">";
+              display: inline-block;
+              margin: 0 3px 0 0;
+            }
+          }
+          &:first-child {
+            padding: 10px;
+            background: #ccc;
+            &:before {
+              display: none;
+            }
+
+          }
+        }
+      }
+
+      a {
+        color: #1C75B0;
+        text-decoration: none;
+        transition: all 0.5s;
+
+        &:hover {
+
+        }
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+
+        li {
+          padding: 0;
+          margin: 0 3px 0 0;
+
+          a {
+            &:after {
+              content: ",";
+              display: inline-block;
+              margin: 0 0 0 -2px;
+            }
+            @media(min-width: 768px) and (max-width: 991px) {
+              @include rem('font-size', 22px);
+            }
+            &:before {
+              display: none;
+            }
+          }
+
+          &:last-child {
+            a {
+              &:after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(even){
+        background: none;
+      }
+    }
+  }
+
+
+  p {
+    font-size: 21px;
+    line-height: 28px;
+    margin: 0 0 24px;
+
+  }
+}

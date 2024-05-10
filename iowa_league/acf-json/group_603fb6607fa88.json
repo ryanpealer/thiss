@@ -1,0 +1,77 @@
+{
+    "key": "group_603fb6607fa88",
+    "title": "Gblock: Sidebar Block Widget",
+    "fields": [
+        {
+            "key": "field_60410e5d46d45",
+            "label": "Show Sidebar",
+            "name": "show_sidebar",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60410e9046d46",
+            "label": "Select Sidebar",
+            "name": "select_sidebar",
+            "type": "select",
+            "instructions": "Select sidebar for this block (You can find it <a href=\"\/wp-admin\/widgets.php\">here<\/a>)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60410e5d46d45",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "type1": "Content Sidebar #1",
+                "type2": "Content Sidebar #2",
+                "type3": "Content Sidebar #3"
+            },
+            "default_value": "type1",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/gblock-sidebar-block-widget"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1636036400
+}

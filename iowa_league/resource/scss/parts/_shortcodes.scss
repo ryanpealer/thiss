@@ -1,0 +1,44 @@
+.custom-searchform {
+  .search-column {
+    @media (min-width: 768px){
+      display: flex;
+      justify-content: space-between;
+      .search-row {
+        flex-basis: calc(50% - 8px);
+      }
+    }
+  }
+  .search-row {
+    margin-bottom: 24px;
+    label {
+      font-weight: bold;
+      margin-bottom: 12px;
+      display: block;
+    }
+  }
+  .search-control {
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    display: block;
+    height: 48px;
+    padding: 11px 16px;
+  }
+  .search-field-button {
+    display: flex;
+    .search-control {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .btn-primary {
+      @include rem(font-size, 16px);
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      box-shadow: none;
+      background-image: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.5 19C15.9183 19 19.5 15.4183 19.5 11C19.5 6.58172 15.9183 3 11.5 3C7.08172 3 3.5 6.58172 3.5 11C3.5 15.4183 7.08172 19 11.5 19Z' stroke='%23001947' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M21.5004 21L17.1504 16.65' stroke='%23001947' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center right 16px;
+    }
+  }
+}

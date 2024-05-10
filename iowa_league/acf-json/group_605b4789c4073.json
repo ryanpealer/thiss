@@ -1,0 +1,124 @@
+{
+    "key": "group_605b4789c4073",
+    "title": "CPT: Videos",
+    "fields": [
+        {
+            "key": "field_60f01a9be6029",
+            "label": "Show Help",
+            "name": "show_help",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60f01a98e6028",
+            "label": "General Information",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60f01a9be6029",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "message": "<img width=\"100%\" src=\"http:\/\/imwca.org\/wp-content\/uploads\/manual\/video.png\" alt=\"\" \/>\r\nFor more information check manual <a href=\"https:\/\/docs.google.com\/document\/d\/19sZxG06khKCIV9kv7XKOVrdNQuu5gMLONHcOKjcrODc\/edit#bookmark=id.n3yo50n8fg0t\" target=\"_blank\">here<\/a>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_60641f80d3069",
+            "label": "Description",
+            "name": "description",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_605b47a58488d",
+            "label": "Youtube url",
+            "name": "youtube_url",
+            "type": "url",
+            "instructions": "Should be full link.<br\/>\r\nEx. https:\/\/www.youtube.com\/watch?v=_uLsVLbIhxg",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_60633637c56ca",
+            "label": "Playlist?",
+            "name": "playlist",
+            "type": "true_false",
+            "instructions": "Turn on if you place link to youtube playlist. Link on front will be opened in a new tab instead popup.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "videos"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1636036397
+}

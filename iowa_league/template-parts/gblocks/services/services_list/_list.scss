@@ -1,0 +1,122 @@
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: -4px;
+  @media (min-width: 768px){
+    margin: -12px;
+  }
+
+  &-item {
+    margin: 4px;
+    @media (min-width: 500px) and (max-width: 990px) {
+      flex-basis: calc((100% / 2) - 24px);
+
+    }
+    @media (min-width: 768px){
+      margin: 12px;
+    }
+    @media (min-width: 991px) {
+      flex-basis: calc((100% / 3) - 24px);
+    }
+
+    .item-name {
+      @include rem(font-size, 16px);
+      font-weight: bold;
+      line-height: 1.375;
+      margin-bottom: 8px;
+      @media (min-width: 768px){
+        @include rem(font-size, 25px);
+        line-height: 1.4;
+        margin-bottom: 16px;
+      }
+    }
+
+    .item-text {
+      margin-bottom: 16px;
+      color: #424242;
+      @media (min-width: 768px){
+        min-height: 135px;
+      }
+    }
+
+    a {
+      background: #fff;
+      box-shadow: 0 0 8px #E9F2FF, 2px 2px 4px #E9F2FF;
+      border-radius: 16px;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      padding: 16px;
+      height: 100%;
+      @media (min-width: 768px){
+        padding: 24px;
+      }
+
+      .item-link {
+        font: {
+          family: $btnTertiaryFont;
+          weight: $btnTertiaryWeight;
+        }
+        @include rem(font-size, $btnTertiaryFontSizeMobile);
+        line-height: $btnTertiaryLineHeight;
+        display: inline-flex;
+        align-items: center;
+        color: $btnTertiaryColor;
+        transition: all 0.3s;
+        text-decoration: none;
+        margin-top: auto;
+
+        &:after {
+          content: '';
+          background: {
+            image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.66699 16L25.3337 16' stroke='#{$btnTertiaryColor}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 6.66669L25.3333 16L16 25.3334' stroke='#{$btnTertiaryColor}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            size: 24px 24px;
+            repeat: no-repeat;
+          }
+          display: block;
+          width: 24px;
+          height: 24px;
+          margin-left: 4px;
+        }
+        @media (min-width: 768px){
+          @include rem(font-size, $btnTertiaryFontSize);
+          &:after {
+            background-size: 32px 32px;
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 0 8px #E9F2FF, 2px 4px 8px #C6D6EE;
+
+        .item-link {
+          color: $btnTertiaryColorHover;
+
+          &:after {
+            content: '';
+            background: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.66699 16L25.3337 16' stroke='#{$btnTertiaryColorHover}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 6.66669L25.3333 16L16 25.3334' stroke='#{$btnTertiaryColorHover}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+          }
+        }
+      }
+
+      &:active {
+        box-shadow: 0 0 8px #E9F2FF, 2px 2px 4px #E9F2FF;
+
+        .item-link {
+          color: $btnTertiaryColorActive;
+
+          &:after {
+            content: '';
+            background: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.66699 16L25.3337 16' stroke='#{$btnTertiaryColorActive}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 6.66669L25.3333 16L16 25.3334' stroke='#{$btnTertiaryColorActive}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+          }
+        }
+      }
+    }
+  }
+}

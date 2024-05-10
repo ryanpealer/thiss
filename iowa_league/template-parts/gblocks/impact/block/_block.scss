@@ -1,0 +1,9 @@
+.blck-impact-wrapper {
+  @include section-bg-styles();
+
+  &:not(.alignfull) {
+    .container {
+      padding: 0;
+    }
+  }
+}

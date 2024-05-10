@@ -1,0 +1,114 @@
+.blck-journey-nav {
+  background: var(--section-bg);
+  color: var(--section-text-color);
+  padding: 24px 0;
+
+  .section-name {
+    @include rem(font-size, 13.33px);
+    line-height: 1.6;
+    color: #151E2F;
+    margin-bottom: 16px;
+    font-style: italic;
+    text-align: center;
+    @media (min-width: 768px) {
+      @include rem(font-size, 21px);
+      letter-spacing: -0.0016em;
+      text-align: left;
+      font-style: normal;
+    }
+  }
+
+  .menu-journey-nav-container {
+    ul {
+      margin: 0 -12px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+
+      li {
+        list-style: none;
+        margin: 0 6px;
+        flex-basis: calc((100% / 3) - 12px);
+        @media (min-width: 768px){
+          margin: 0 12px;
+          flex-basis: calc((100% / 3) - 24px);
+        }
+
+        a {
+          max-width: 392px;
+          margin: 0 auto;
+          display: flex;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          font-weight: bold;
+          @include rem(font-size, 13.33px);
+          line-height: 1.4;
+          background: #001947;
+          box-shadow: 0 0 8px #E9F2FF, 2px 2px 4px #E9F2FF;
+          border-radius: 8px;
+          color: #fff;
+          text-decoration: none;
+          padding: 10px 8px;
+          text-align: center;
+          @media (min-width: 768px){
+            justify-content: space-between;
+            @include rem(font-size, 25px);
+            line-height: 1.4;
+            letter-spacing: -0.0016em;
+            text-align: left;
+            padding: 16px 32px;
+          }
+
+          small {
+            display: block;
+            font-weight: normal;
+            @include rem(font-size, 11.11px);
+            line-height: 1.62;
+            @media (min-width: 768px){
+              @include rem(font-size, 16px);
+              line-height: 1.6;
+              letter-spacing: 0;
+            }
+          }
+
+          svg {
+            @media (max-width: 767px){
+              display:none;
+            }
+          }
+
+          &:hover {
+            background: #002F86;
+          }
+        }
+
+        &.current-menu-item {
+          position: relative;
+          a {
+            background: #002F86;
+            box-shadow: 0 0 8px #E9F2FF, 2px 4px 8px #C6D6EE;
+          }
+          &:after {
+            content: '';
+            background: {
+              image: url("data:image/svg+xml,%3Csvg width='28' height='26' viewBox='0 0 28 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_dd)'%3E%3Cpath d='M12.268 9C13.0378 7.66667 14.9623 7.66667 15.7321 9L19.1962 15C19.966 16.3333 19.0037 18 17.4641 18H10.5359C8.9963 18 8.03405 16.3333 8.80385 15L12.268 9Z' fill='%23FFAE00'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_dd' x='0.533203' y='0' width='26.9342' height='26' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dx='2' dy='2'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.9125 0 0 0 0 0.9475 0 0 0 0 1 0 0 0 1 0'/%3E%3CfeBlend mode='multiply' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='4'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.913725 0 0 0 0 0.94902 0 0 0 0 1 0 0 0 1 0'/%3E%3CfeBlend mode='multiply' in2='effect1_dropShadow' result='effect2_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect2_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+              size: cover;
+            };
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translate(-50%,0);
+            width: 16px;
+            height: 16px;
+            @media (min-width: 768px){
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "settings": {
+    "blocks": {
+      "core/button": {
+        "border": {
+          "radius": 0
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,115 @@
+// .blck-inner-news-search {
+// }
+.news-searchform {
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  margin: 0 -8px 0;
+}
+.advanced_search{
+  color: $tertiary2;
+  a{
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: $mainFontSizeMobile;
+    @media (min-width: 768px) {
+      font-size: $mainFontSize;
+    }
+
+  }
+  svg{
+    margin-right: 10px;
+    path{
+      stroke: $tertiary2;
+    }
+  }
+}
+.form-group {
+  margin: 0 8px 24px;
+  flex: 1; -ms-flex: 1 0 auto;
+  &:not(.large){
+    min-width: calc(100% - (8px * 2));
+    @media (min-width: 768px) {
+      min-width: unset;
+      max-width: 312px;
+    }
+  }
+  &.large {
+    min-width: calc(100% - (8px * 2));
+    @media (min-width: 768px){
+      min-width: unset;
+      max-width: 568px;
+    }
+  }
+  label {
+    @include rem(font-size, 12.8px);
+    line-height: 1.6;
+    letter-spacing: -0.0016em;
+    display: inline-flex;
+    margin-bottom: 8px;
+    @media (min-width: 768px){
+      margin-bottom: 16px;
+    }
+  }
+}
+.search-field-button {
+  @include search-group;
+}
+
+
+#ajaxsearchprobsettings2_1.searchsettings, 
+#ajaxsearchprobsettings2_2.searchsettings, 
+div.asp_sb.asp_sb_2.searchsettings {
+  max-width: unset!important;
+}
+
+.asp_shortcode_column {
+  div.asp_w.asp_s.searchsettings fieldset, 
+  div.asp_w.asp_sb.searchsettings fieldset {
+    padding-right: 2em !important;
+    width: 100% !important;
+    @media (min-width: 768px) {
+      width: 258px!important;
+    }
+    @media (max-width: 767px) {
+      padding: 0!important;
+    }
+    &.asp_filter_date {
+      display: flex;
+    }
+    &.asp_s_btn_container {
+      display: flex;
+      width: auto!important;
+      min-width: unset!important;
+      .asp_sr_btn_flex {
+        margin-top: auto;
+        margin-bottom: 14px;
+        @media (min-width: 768px) {
+          margin-left: 20px!important;
+        }
+      }
+    }
+  }
+}
+
+#wpdreams_asp_settings_2 {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+#ajaxsearchpro2_1 .probox {
+  .promagnifier {
+    background-color: $primary1!important;
+    box-shadow: unset!important;
+    .asp_text_button {
+      color: $white!important;
+    }
+    .innericon {
+      svg {
+        fill: $white!important  ;
+      }
+    }
+  }
+} 

@@ -1,0 +1,11 @@
+.archive {
+  .articles-list {
+    margin-top: 36px;
+    background-color: $white;
+    margin-bottom: 32px;
+    padding: 20px;
+    @media (min-width: 992px) {
+      padding: 48px 50px 5px;
+    }
+  }
+}

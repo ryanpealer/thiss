@@ -1,0 +1,52 @@
+.alignwide {
+  margin-left: -20px;
+  margin-right: -20px;
+  @media (min-width: 1300px) {
+    margin-left: -80px;
+    margin-right: -80px;
+  }
+}
+
+.alignfull {
+  margin: {
+    left: calc(50% - 50vw) !important;
+    right: calc(50% - 50vw) !important;
+  }
+  max-width: 100vw;
+  width: 100vw;
+
+  .editor-styles-wrapper & {
+    margin: auto!important;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  > img {
+    width: 100vw;
+  }
+}
+
+.wp-block-column {
+  .alignfull {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+
+    > img {
+      width: 100%;
+    }
+  }
+}
+
+@import "parts/editor-parts";
+
+.entry-content {
+  > .wp-block-separator.is-style-wide {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+}
+
+.acf-icon {
+  text-decoration: none;
+}

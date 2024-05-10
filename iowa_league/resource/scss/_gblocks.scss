@@ -1,0 +1,76 @@
+@import "../../template-parts/gblocks/hero/style1/style1",
+  "../../template-parts/gblocks/hero/style2/style2",
+  "../../template-parts/gblocks/post_slider/post_slider/slider",
+  "../../template-parts/gblocks/post_slider/style1/style1",
+  "../../template-parts/gblocks/endorsement/endorsement_slider/slider",
+  "../../template-parts/gblocks/endorsement/style1/style1",
+  "../../template-parts/gblocks/research/slider/slider",
+  "../../template-parts/gblocks/research/style1/style1",
+  "../../template-parts/gblocks/team/listing/listing",
+  "../../template-parts/gblocks/team/style1/style1",
+  "../../template-parts/gblocks/impact/listing/listing",
+  "../../template-parts/gblocks/impact/block/block",
+  "../../template-parts/gblocks/reports/reports",
+  "../../template-parts/gblocks/multi_column/listing/listing",
+  "../../template-parts/gblocks/multi_column/listing2/listing",
+  "../../template-parts/gblocks/multi_column/style1/style1",
+  "../../template-parts/gblocks/multi_column/style2/style2",
+  "../../template-parts/gblocks/timeline/timeline",
+  "../../template-parts/gblocks/tools/spacer/spacer",
+  "../../template-parts/gblocks/gmap/listing/listing",
+  "../../template-parts/gblocks/sidebar_block_widget/sidebar_block_widget",
+  "../../template-parts/gblocks/gmap/style1/style1",
+  "../../template-parts/gblocks/services/services_list/list",
+  "../../template-parts/gblocks/services/style1/style1",
+  "../../template-parts/gblocks/featured/featured",
+  "../../template-parts/gblocks/section_heading/style1",
+  "../../template-parts/gblocks/secondary_nav/style1/style1",
+  "../../template-parts/gblocks/news/listing/listing",
+  "../../template-parts/gblocks/news/search/search",
+  "../../template-parts/gblocks/news/style1/style1",
+  "../../template-parts/gblocks/notice/notice",
+  "../../template-parts/gblocks/category_listing/category_listing",
+  "../../template-parts/gblocks/program_benefits/program_benefits",
+  "../../template-parts/gblocks/select_service_category/style1",
+  "../../template-parts/gblocks/calendar/calendar",
+  "../../template-parts/gblocks/image_slider/image_slider/image_slider",
+  "../../template-parts/gblocks/image_slider/style1/style1",
+  "../../template-parts/gblocks/link_table/style1",
+  "../../template-parts/gblocks/videos/archive";
+
+.block-heading {
+  &-title {
+    font-size: 39.06px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.89px;
+    max-width: 560px;
+    margin: 0 auto 8px!important;
+    @media (max-width: 767px) {
+      padding: 0 20px;
+      width: 100%;
+    }
+  }
+  &-subtitle {
+    max-width: 560px;
+    margin: 0 auto 48px!important;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    position: relative;
+    @media (max-width: 767px) {
+      padding: 0 20px;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -16px;
+      height: 1px;
+      width: 96px;
+      margin: 0 auto;
+      background-color: $tertiary1;
+    }
+  }
+}
