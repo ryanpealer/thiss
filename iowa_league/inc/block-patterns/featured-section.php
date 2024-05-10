@@ -1,8 +1,0 @@
-<?php
-return array(
-    'title' => __('Header block', 'iowa_league-admin'),
-    'description' => _x('Top section of every page', 'iowa_league-admin'),
-    'categories' => array('iowa_league_header'),
-    'content' => "<!-- wp:acf/mc-style2 {\"id\":\"block_606def98184a1\",\"name\":\"acf/mc-style2\",\"data\":{\"content_width\":\"middle\",\"_content_width\":\"field_5fe33ebc5eb98\",\"font_size\":\"default\",\"_font_size\":\"field_5fe345001ec6b\",\"section_padding_top\":\"none\",\"_section_padding_top\":\"field_5fe34581d1e27\",\"section_padding_bottom\":\"default\",\"_section_padding_bottom\":\"field_5fe345aad1e28\",\"section_padding\":\"\",\"_section_padding\":\"field_5fe3456ed1e26\",\"bg_color\":\"\",\"_bg_color\":\"field_5fe1f2f402210\",\"bg_image\":7828,\"_bg_image\":\"field_5fe1f22d0d999\",\"bg_size\":\"cover\",\"_bg_size\":\"field_5fe1f2632af9a\",\"bg_position\":\"center center\",\"_bg_position\":\"field_5fe1f30b02211\",\"settings_image_height\":\"small\",\"_settings_image_height\":\"field_6070f0371443f\",\"settings\":\"\",\"_settings\":\"field_6070f0370f39b\"},\"align\":\"\",\"mode\":\"preview\"} -->\n<!-- wp:heading {\"placeholder\":\"Add a root-level heading\",\"className\":\"title\"} -->\n<h2 class=\"title\">Our Mission</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"placeholder\":\"Add a paragraph\",\"className\":\"subtitle\"} -->\n<p class=\"subtitle\">The Iowa League of Cities serves as the unified voice of cities, providing advocacy, training and guidance to strengthen Iowa’s communities.<br><br>We recognize the need for strong leadership in our missions and in each of our values. These values represent the shared principles that guide all of our efforts and decisions.</p>\n<!-- /wp:paragraph -->\n<!-- /wp:acf/mc-style2 -->"
-
-);
